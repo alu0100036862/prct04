@@ -56,7 +56,10 @@ puts "Matriz B:"
 matB.mostrar_matriz()
 puts
 puts "SUMA (A+B) :"
-(matB.sumar(matA)).mostrar_matriz
+(matA.sumar(matB)).mostrar_matriz
+puts
+puts "PRODUCTO (A*B) :"
+(matA.multiplicar(matB)).mostrar_matriz
 
 puts
 

@@ -42,8 +42,28 @@ class Matriz
   end
 
   # Operación de producto de matrices  
-  def multiplicar(otra)
+  def multiplicar(matrizB)
 
+    matRes = Array.new(matriz.size - 1,0)
+
+    for fil in 0...matriz[0].size 
+
+	matRes[fil] = Array.new(matrizB.matriz.size,0)
+
+	for col in 0...matrizB.matriz.size
+
+	    for pos in 0...matriz.size
+
+		prod = matriz[fil][pos] * matrizB.matriz[pos][col]
+		matRes[fil][col] = matRes[fil][col] + prod
+
+	    end
+	
+	end
+
+    end
+
+    Matriz.new(matRes)
 
   end
 
