@@ -25,8 +25,19 @@ class Matriz
   end
  
   # Operación de suma de matrices
-  def sumar(otra)
+  def sumar(matrizB)
 
+    matRes = Array.new(matriz.size - 1)
+
+    for fil in 0...matriz.size
+       matRes[fil] = Array.new(matriz[fil].size - 1)
+        for col in 0...matriz[fil].size
+            matRes[fil][col] = matriz[fil][col] + matrizB.matriz[fil][col]
+
+        end
+
+    end
+     Matriz.new(matRes)
 
   end
 

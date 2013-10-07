@@ -1,5 +1,5 @@
 !# /usr/local/rvm/rubies/ruby-2.0.0-p247/bin/ruby
-
+require './matriz.rb'
 
 #################################################################
 ###################### MÉTODOS y FUNCIONES ######################
@@ -54,6 +54,9 @@ matA.mostrar_matriz()
 puts
 puts "Matriz B:"
 matB.mostrar_matriz()
+puts
+puts "SUMA (A+B) :"
+(matB.sumar(matA)).mostrar_matriz
 
 puts
 
