@@ -57,11 +57,17 @@ matB.mostrar_matriz()
 puts
 puts "SUMA (A+B) :"
 (matA.sumar(matB)).mostrar_matriz
+<<<<<<< HEAD
 puts
 puts "PRODUCTO (A*B) :"
 (matA.multiplicar(matB)).mostrar_matriz
+=======
+>>>>>>> ramamohammed
 puts
+puts "PRODUCTO (A*B) :"
+(matA.multiplicar(matB)).mostrar_matriz
 
-puts "=============================================="
-puts "fin"
-puts "=============================================="
+#El conflicto generó este mensage:
+#Auto-merging prct04.rb
+#CONFLICT (content): Merge conflict in prct04.rb
+#Automatic merge failed; fix conflicts and then commit the result.
