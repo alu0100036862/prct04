@@ -35,15 +35,6 @@ def read_matrices(fn)
 
 end
 
-# Mostrar matriz
-def mostrar_matriz(matriz)
-
-  matriz.each do | fila |
-    puts fila.to_s + "  "
-  end
-
-end
-
 #################################################################
 
 puts "=============================================="
@@ -55,11 +46,14 @@ puts
 fichero = ARGV[0]
 matrizA, matrizB = read_matrices(fichero)
 
+matA = Matriz.new(matrizA)
+matB = Matriz.new(matrizB)
+
 puts "Matriz A:"
-mostrar_matriz(matrizA)
+matA.mostrar_matriz()
 puts
 puts "Matriz B:"
-mostrar_matriz(matrizB)
+matB.mostrar_matriz()
 
 puts
 
