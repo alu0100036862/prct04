@@ -60,9 +60,3 @@ puts "SUMA (A+B) :"
 puts
 puts "PRODUCTO (A*B) :"
 (matA.multiplicar(matB)).mostrar_matriz
-
-puts
-
-puts "=============================================="
-puts "fin"
-puts "=============================================="
