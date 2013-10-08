@@ -44,14 +44,23 @@ end
 #'Note about fast-forwards' section of 'git push --help' for details.
 
 
-puts "Prueba: sumar y multiplicar dos matrices a y b"
-puts "=============================================="
-
-puts 
-
 fichero = ARGV[0]
 matrizA, matrizB = read_matrices(fichero)
 
+# Verificamos que las matrices sean cuadradas
+if (matrizA.length != matrizA[0].length) or (matrizB.length != matrizB[0].length) or (matrizA.length != matrizB.length) 
+  
+  puts "Las matrices introducidas no son cuadras o no tienen la misma dimensión"
+  return nil
+
+end
+
+puts "=============================================="
+puts "Prueba: sumar y multiplicar dos matrices a y b"
+puts "=============================================="
+
+puts
+ 
 matA = Matriz.new(matrizA)
 matB = Matriz.new(matrizB)
 
@@ -63,12 +72,9 @@ matB.mostrar_matriz()
 puts
 puts "SUMA (A+B) :"
 (matA.sumar(matB)).mostrar_matriz
-<<<<<<< HEAD
 puts
 puts "PRODUCTO (A*B) :"
 (matA.multiplicar(matB)).mostrar_matriz
-=======
->>>>>>> ramamohammed
 puts
 puts "PRODUCTO (A*B) :"
 (matA.multiplicar(matB)).mostrar_matriz
