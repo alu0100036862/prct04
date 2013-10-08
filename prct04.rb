@@ -75,9 +75,6 @@ puts "SUMA (A+B) :"
 puts
 puts "PRODUCTO (A*B) :"
 (matA.multiplicar(matB)).mostrar_matriz
-puts
-puts "PRODUCTO (A*B) :"
-(matA.multiplicar(matB)).mostrar_matriz
 
 #El conflicto generó este mensage:
 #Auto-merging prct04.rb
